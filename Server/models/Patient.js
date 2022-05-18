@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
-const UserSchema = new Schema({
+const PatientSchema = new Schema({
   name: {
     type: String,
     required: true,
@@ -27,10 +27,6 @@ const UserSchema = new Schema({
     type: String,
     required: true,
   },
-  gender: {
-    type: String,
-    required: true,
-  },
   blood_group: {
     type: String,
     required: true,
@@ -43,10 +39,7 @@ const UserSchema = new Schema({
     type: String,
     required: false,
   },
-
-  //gender, blood group , age , allergies, basic history (like dibetic or not)
-  //
 });
-const User = mongoose.model("patient", UserSchema);
+const User = mongoose.model("patient", PatientSchema);
 
 module.exports = Patient;

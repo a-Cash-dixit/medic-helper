@@ -17,7 +17,6 @@ const UserSchema = new Schema({
     type: Array,
     required: false,
   },
-
 });
 const User = mongoose.model("history", UserSchema);
 
