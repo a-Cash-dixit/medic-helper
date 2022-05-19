@@ -17,7 +17,10 @@ const UserSchema = new Schema({
     type: Array,
     required: false,
   },
-
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "patient",
+  },
 });
 const User = mongoose.model("history", UserSchema);
 

@@ -43,10 +43,14 @@ const UserSchema = new Schema({
     type: String,
     required: false,
   },
+  isdoc: {
+    type: Boolean,
+    required: true,
+  },
 
   //gender, blood group , age , allergies, basic history (like dibetic or not)
   //
 });
-const User = mongoose.model("patient", UserSchema);
+const Patient = mongoose.model("patient", PatientSchema);
 
 module.exports = Patient;
