@@ -1,9 +1,16 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
-const UserSchema = new Schema({
+const HistorySchema = new Schema({
+  patient_id: {
+    type: String,
+    required: true,
+  },
   problem: {
     type: String,
     required: true,
+  },
+  descriptioin: {
+    type: String,
   },
   duration: {
     type: String,
@@ -22,6 +29,6 @@ const UserSchema = new Schema({
     ref: "patient",
   },
 });
-const User = mongoose.model("history", UserSchema);
+const History = mongoose.model("history", HistorySchema);
 
 module.exports = History;

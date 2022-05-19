@@ -1,6 +1,10 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
-const UserSchema = new Schema({
+<<<<<<< Updated upstream
+const DoctorSchema = new Schema({
+=======
+const DocSchema = new Schema({
+>>>>>>> Stashed changes
   name: {
     type: String,
     required: true,
@@ -9,6 +13,10 @@ const UserSchema = new Schema({
     type: Number,
     required: true,
     unique: true,
+  },
+  imageurl: {
+    type: String,
+    required: false,
   },
   email: {
     type: String,
@@ -19,10 +27,6 @@ const UserSchema = new Schema({
     type: String,
     default: "General",
   },
-  date: {
-    type: Date,
-    default: Date.now,
-  },
   experience: {
     type: Number,
     default: 0,
@@ -30,15 +34,6 @@ const UserSchema = new Schema({
   speciality: {
     type: String,
     required: true,
-  },
-  Language: {
-    type: Array,
-    required: false,
-    default: ["english"],
-  },
-  address: {
-    type: String,
-    required: false,
   },
   timing: {
     type: String,
@@ -48,10 +43,6 @@ const UserSchema = new Schema({
     type: String,
     default: "very genius doctor of out hospital.",
   },
-  services: {
-    type: String,
-    required: false,
-  },
   awards: {
     type: String,
     required: false,
@@ -60,14 +51,11 @@ const UserSchema = new Schema({
     type: String,
     required: false,
   },
-  interest: {
-    type: String,
-    required: false,
-  },
-  // experience, speciality, language, address,
-  // timing(avalilabe houres) , description (thodi si tareef)
-  // services and awards, membership and interest
 });
-const User = mongoose.model("doctor", UserSchema);
+<<<<<<< Updated upstream
+const User = mongoose.model("doctor", DoctorSchema);
+=======
+const Doctor = mongoose.model("doctor", DocSchema);
+>>>>>>> Stashed changes
 
 module.exports = Doctor;
