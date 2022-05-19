@@ -1,10 +1,7 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
-<<<<<<< Updated upstream
-const DoctorSchema = new Schema({
-=======
+
 const DocSchema = new Schema({
->>>>>>> Stashed changes
   name: {
     type: String,
     required: true,
@@ -52,10 +49,6 @@ const DocSchema = new Schema({
     required: false,
   },
 });
-<<<<<<< Updated upstream
-const User = mongoose.model("doctor", DoctorSchema);
-=======
 const Doctor = mongoose.model("doctor", DocSchema);
->>>>>>> Stashed changes
 
 module.exports = Doctor;

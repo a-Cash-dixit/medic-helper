@@ -26,6 +26,6 @@ const HospitalSchema = new Schema({
     required: true,
   },
 });
-const User = mongoose.model("hospital", HospitalSchema);
+const Hospital = mongoose.model("hospital", HospitalSchema);
 
 module.exports = Hospital;
