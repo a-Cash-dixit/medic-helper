@@ -39,7 +39,19 @@ const PatientSchema = new Schema({
     type: String,
     required: false,
   },
+<<<<<<< Updated upstream
 });
 const User = mongoose.model("patient", PatientSchema);
+=======
+  isdoc: {
+    type: Boolean,
+    required: true,
+  },
+
+  //gender, blood group , age , allergies, basic history (like dibetic or not)
+  //
+});
+const Patient = mongoose.model("patient", PatientSchema);
+>>>>>>> Stashed changes
 
 module.exports = Patient;
