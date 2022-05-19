@@ -24,13 +24,10 @@ const HistorySchema = new Schema({
     type: Array,
     required: false,
   },
-<<<<<<< Updated upstream
-=======
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "patient",
   },
->>>>>>> Stashed changes
 });
 const History = mongoose.model("history", HistorySchema);
 

@@ -39,10 +39,6 @@ const PatientSchema = new Schema({
     type: String,
     required: false,
   },
-<<<<<<< Updated upstream
-});
-const User = mongoose.model("patient", PatientSchema);
-=======
   isdoc: {
     type: Boolean,
     required: true,
@@ -52,6 +48,6 @@ const User = mongoose.model("patient", PatientSchema);
   //
 });
 const Patient = mongoose.model("patient", PatientSchema);
->>>>>>> Stashed changes
+
 
 module.exports = Patient;
