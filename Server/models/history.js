@@ -9,7 +9,7 @@ const HistorySchema = new Schema({
     type: String,
     required: true,
   },
-  descriptioin: {
+  description: {
     type: String,
   },
   duration: {
