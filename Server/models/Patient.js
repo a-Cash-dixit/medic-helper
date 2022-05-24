@@ -39,10 +39,6 @@ const PatientSchema = new Schema({
     type: String,
     required: false,
   },
-  isdoc: {
-    type: Boolean,
-    required: true,
-  },
 
   //gender, blood group , age , allergies, basic history (like dibetic or not)
   //
