@@ -8,8 +8,8 @@ const DocSchema = new Schema({
   },
   DocId: {
     type: Number,
-    required: true,
-    unique: true,
+    required: false,
+    unique: false,
   },
   imageurl: {
     type: String,
@@ -17,8 +17,8 @@ const DocSchema = new Schema({
   },
   email: {
     type: String,
-    unique: false,
-    required: false,
+    unique: true,
+    required: true,
   },
   password: {
     type: String,
@@ -30,11 +30,11 @@ const DocSchema = new Schema({
   },
   speciality: {
     type: String,
-    required: true,
+    required: false,
   },
   timing: {
     type: String,
-    required: true,
+    required: false,
   },
   description: {
     type: String,

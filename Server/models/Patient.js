@@ -7,13 +7,13 @@ const PatientSchema = new Schema({
   },
   PatientId: {
     type: Number,
-    required: true,
-    unique: true,
+    required: false,
+    unique: false,
   },
   email: {
     type: String,
-    unique: false,
-    required: false,
+    unique: true,
+    required: true,
   },
   password: {
     type: String,
@@ -25,29 +25,24 @@ const PatientSchema = new Schema({
   },
   gender: {
     type: String,
-    required: true,
+    required: false,
   },
   blood_group: {
     type: String,
-    required: true,
+    required: false,
   },
   age: {
     type: Number,
-    required: true,
+    required: false,
   },
   basic_history: {
     type: String,
     required: false,
-  },
-  isdoc: {
-    type: Boolean,
-    required: true,
   },
 
   //gender, blood group , age , allergies, basic history (like dibetic or not)
   //
 });
 const Patient = mongoose.model("patient", PatientSchema);
-
 
 module.exports = Patient;
