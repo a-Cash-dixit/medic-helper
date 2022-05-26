@@ -14,11 +14,10 @@ export const Navi = ({isModalOpen,setIsModalOpen}) => {
         </a>
 
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-
-
-          <a className="mr-5 hover:text-white-900">Home</a>
+        <a className="mr-5 hover:text-white-900" href="/">Home</a>
           <a className="mr-5 hover:text-white-900">About</a>
           <a className="mr-5 hover:text-white-900">Department</a>
+          <a className="mr-5 hover:text-white-900" href="/history">History</a>
           <a className="mr-5 hover:text-white-900">Doctors</a>
           <a className="mr-5 hover:text-white-900">Contact Us</a>
         </nav>
